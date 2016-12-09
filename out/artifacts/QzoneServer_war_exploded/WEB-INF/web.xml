@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserServer</servlet-name>
+    <servlet-class>com.higgs.qzoneserver.view.UserServer</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserFriendServer</servlet-name>
+    <servlet-class>com.higgs.qzoneserver.view.UserFriendServer</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserFilesServlet</servlet-name>
+    <servlet-class>com.higgs.qzoneserver.view.UserFilesServlet</servlet-class>
+  	<init-param>
+  		<param-name>uploadpath</param-name>
+  		<param-value>uploadimage/</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>uploadsize</param-name>
+  		<param-value>724288</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>uploadtype</param-name>
+  		<param-value>jpg,jpge,png,gif,bmp,dib,jpe,jfif,tif,jfif</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>nouploadtype</param-name>
+  		<param-value>jsp,asp,php,aspx,html,htm,exe,bat</param-value>
+  	</init-param>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>MoodServlet</servlet-name>
+    <servlet-class>com.higgs.qzoneserver.view.MoodServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>JournalServlet</servlet-name>
+    <servlet-class>com.higgs.qzoneserver.view.JournalServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>UserServer</servlet-name>
+    <url-pattern>/UserServer</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserFriendServer</servlet-name>
+    <url-pattern>/UserFriendServer</url-pattern>
+   
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserFilesServlet</servlet-name>
+    <url-pattern>/UserFilesServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MoodServlet</servlet-name>
+    <url-pattern>/MoodServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>JournalServlet</servlet-name>
+    <url-pattern>/servlet/JournalServlet</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <!--resource-ref>
+  	<res-ref-name>jdbc/myqzone</res-ref-name>
+  	<res-type>javax.sql.DataSource</res-type>
+  	<res-auth>Container</res-auth>
+      <res-sharing-scope>Shareable</res-sharing-scope>
+  </resource-ref-->
+</web-app>

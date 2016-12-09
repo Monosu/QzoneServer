@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="QzoneServer:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/QzoneServer_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="QzoneServer" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="module" name="smartupload.jar" module-name="QzoneServer" />
+          <element id="file-copy" path="$USER_HOME$/Downloads/mysql-connector-java-5.1.40 (1)/mysql-connector-java-5.1.40/mysql-connector-java-5.1.40-bin.jar" />
+          <element id="file-copy" path="D:/apache-tomcat-9.0.0.M13/lib/servlet-api.jar" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="QzoneServer/web/Web" />
+    </root>
+  </artifact>
+</component>
